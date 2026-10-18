@@ -1,0 +1,7 @@
+- insert:
+    - id: helmd-health
+      name: '@xiaofeng11122/helm-d'
+    # H-CoT settings namespace + UI data plane. Its own Entry so two namespaces
+    # never share one apply (and one registration cannot shadow the other).
+    - id: helmd-hcot-settings
+      name: '@xiaofeng11122/helm-d/hcot-settings'
